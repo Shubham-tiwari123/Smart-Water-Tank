@@ -21,7 +21,7 @@
     <android.support.v7.widget.CardView
         android:id="@+id/tankView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="420dp"
         android:layout_below="@+id/textView"
         android:layout_marginLeft="25dp"
         android:layout_marginTop="15dp"
@@ -41,45 +41,39 @@
             <TextView
                 android:id="@+id/block1"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:background="#15C9DD" />
             <TextView
                 android:id="@+id/block2"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="2dp"
                 android:background="#62D2DF" />
             <TextView
                 android:id="@+id/block3"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="2dp"
                 android:background="#82D8E2" />
             <TextView
                 android:id="@+id/block4"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="2dp"
-                android:background="#8AE0E7" />
+                android:background="#8EE5EC" />
             <TextView
                 android:id="@+id/block5"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="2dp"
-                android:background="#9BE4EC" />
+                android:background="#AAEDF7" />
 
             <TextView
                 android:id="@+id/block6"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="2dp"
-                android:background="#9FF2FA" />
-            <TextView
-                android:id="@+id/block7"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="2dp"
-                android:background="#D1F8FC" />
+                android:background="#D1F6FD" />
         </LinearLayout>
 
     </android.support.v7.widget.CardView>
