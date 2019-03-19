@@ -22,11 +22,10 @@ public class TankStatus extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        System.out.println("hit");
         int waterLevel = saveData.getData();
         JSONObject waterObj = new JSONObject();
         waterObj.put("waterLevel", waterLevel);
-        
+        System.out.println("Level:"+waterLevel);
         JSONObject jSONObject = new JSONObject();
         jSONObject.put("waterObj", waterObj);
         PrintWriter printWriter = response.getWriter();
