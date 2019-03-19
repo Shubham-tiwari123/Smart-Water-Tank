@@ -41,30 +41,30 @@
             <TextView
                 android:id="@+id/block1"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:background="#15C9DD" />
             <TextView
                 android:id="@+id/block2"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="2dp"
                 android:background="#62D2DF" />
             <TextView
                 android:id="@+id/block3"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="2dp"
                 android:background="#82D8E2" />
             <TextView
                 android:id="@+id/block4"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="2dp"
                 android:background="#8EE5EC" />
             <TextView
                 android:id="@+id/block5"
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
+                android:layout_height="60dp"
                 android:layout_marginTop="2dp"
                 android:background="#AAEDF7" />
 
@@ -73,9 +73,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="2dp"
+                android:background="#C7ECF3" />
+            <TextView
+                android:id="@+id/block7"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="2dp"
                 android:background="#D1F6FD" />
         </LinearLayout>
-
     </android.support.v7.widget.CardView>
 
     <Button
@@ -86,6 +91,19 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="8dp"
         android:text="Start"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/stopMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tankView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:visibility="invisible"
+        android:text="STOP"
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:background="@color/colorPrimaryDark"
