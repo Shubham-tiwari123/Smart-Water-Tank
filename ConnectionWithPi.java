@@ -32,23 +32,23 @@ public class ConnectionWithPi extends HttpServlet {
             buffer.append(line);
         String data = buffer.toString();
         JSONParser parser = new JSONParser();
-        System.out.println("dataOrder:-"+data);
+        System.out.println("waterLevel:-"+data);
         
         try {
             JSONObject jSONObject = (JSONObject) parser.parse(data);
             waterLevel = jSONObject.get("waterLevel").toString();
             int level = Integer.parseInt(waterLevel);
-            saveData.updateData(level);
+            if(level!=-165)
+                saveData.updateData(level);
+            int btnStatus = saveData.getBtnStatus();
             System.out.println("text:-"+waterLevel);
+      
+            JSONObject jSONObject3 = new JSONObject();
+            jSONObject3.put("response", btnStatus);
+            PrintWriter printWriter = response.getWriter();
+            printWriter.print(jSONObject3);
         } catch (ParseException ex) {
             
         }
-        
-        /*JSONObject jSONObject3 = new JSONObject();
-        jSONObject3.put("itemName", "shubham");
-        //jSONObject3.put("itemPrice", priceObj);
-        jSONObject3.put("itemQnt", "tiwari");
-        PrintWriter printWriter = response.getWriter();
-        printWriter.print(jSONObject3);*/
     }
 }
